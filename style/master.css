@@ -8,6 +8,10 @@
     margin-top: -117px;
 }
 
+.nav-active {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .nav-btn {
     background-color: #fff;
     display: block;
@@ -121,4 +125,32 @@
 
 .hover-zoom-in:hover .fas {
     transform: scale(1);
+}
+
+@media screen and (max-width: 1024px) {
+    .article {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .article {
+        width: auto;
+        padding: 4rem 2rem 2rem;
+    }
+
+    .nav {
+        top: 0;
+        left: 0;
+        margin-top: 0;
+        width: 100%;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .article-title {
+        text-align: center;
+    }
+
 }
