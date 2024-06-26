@@ -32,7 +32,47 @@ function setInit() {
 
 function setEvent() {
     setScroll();
+    setFancybox();
     //其他事件的函式庫
+}
+
+function setFancybox() {
+    $grid.find('a').fancybox({
+        protect: true,
+        loop: true,
+        animationDuration: 1000,
+        transitionDuration: 1000,
+        transitionEffect: 'tube',
+        // fullScreen: {
+        //     autoStart: false,
+        // },
+        keyboard: true,
+        // infobar: true,
+        // toolbar: true,
+        // smallBtn: true,
+        arrows: true,
+        // slideShow: {
+        //     autoStart: true,
+        //     speed: 1000,
+        // },
+        // thumbs: true,
+        // buttons: [
+        //     'share',
+        //     'zoom',
+        //     'slideShow',
+        //     'fullscreen',
+        //     'thumbs',
+        //     'close'
+        // ],
+        media: {
+            youtube: {
+                params: {
+                    autoplay:false,
+                }
+            }
+        }
+    });
+
 }
 
 setInit();

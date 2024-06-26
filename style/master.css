@@ -23,9 +23,13 @@
     transition-duration: .3;
 }
 
-.nav-btn:hover,
-.nav-btn-active {
+.nav-btn-active,
+.nav-btn:hover {
     opacity: 1;
+}
+
+.nav-btn-active {
+    pointer-events: none;
 }
 
 .nav-btn-index {
